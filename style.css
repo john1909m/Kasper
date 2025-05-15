@@ -923,4 +923,267 @@ footer{
     background-color: white;
 }
 
+/* Mobile Menu */
+.mobile-menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu-btn i {
+    color: white;
+    font-size: 24px;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Video */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form Responsiveness */
+input, textarea, button {
+    max-width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .container-1, .container-2, .container-3 {
+        width: 90%;
+    }
+    
+    .landing-body {
+        width: 65%;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Tablet styles */
+    .nav-bar {
+        width: 60%;
+    }
+    
+    .landing-body {
+        width: 80%;
+    }
+    
+    .serv-card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .serv-card-txt {
+        width: 85%;
+    }
+    
+    .port-card {
+        width: 50%;
+    }
+    
+    .records-body {
+        flex-wrap: wrap;
+    }
+    
+    .record-card {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    
+    .skills-all {
+        flex-direction: column;
+    }
+    
+    .testmon, .our-skills {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .mobile-body {
+        width: 60%;
+    }
+    
+    /* Make portfolio cards more responsive */
+    .portfolio-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    /* Adjust video section */
+    .video .video-txt {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile styles */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 80px 0;
+        transition: 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-bar.active {
+        right: 0;
+    }
+    
+    .nav-bar a {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+    
+    .nav-bar .v-line {
+        display: none;
+    }
+    
+    .landing-body {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+    
+    .landing-txt {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .landing-body .arrow {
+        display: none;
+    }
+    
+    .port-card {
+        width: 100%;
+    }
+    
+    .serv-head {
+        width: 100%;
+    }
+    
+    .serv-head h1 {
+        font-size: 28px;
+    }
+    
+    .mobile-img {
+        display: none;
+    }
+    
+    .mobile-body {
+        width: 100%;
+        left: 0;
+    }
+    
+    .record-card {
+        width: 100%;
+    }
+    
+    .sub-body {
+        flex-direction: column;
+    }
+    
+    .input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .sub-txt {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .serv-3-body {
+        flex-direction: column;
+    }
+    
+    .serv-3-inputs, .serv-3-contacts {
+        width: 100%;
+    }
+    
+    .portfolio-cards {
+        justify-content: center;
+    }
+    
+    /* Additional mobile improvements */
+    .cirs {
+        top: auto;
+        bottom: 20px;
+    }
+    
+    .serv-3-inputs input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    /* Improve footer for mobile */
+    .footer-body {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-social-logos {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .container-1, .container-2, .container-3 {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .landing-txt h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .serv-head h1 {
+        font-size: 24px;
+    }
+    
+    .serv-card {
+        padding: 10px;
+    }
+    
+    .serv-card-img {
+        width: 15%;
+    }
+    
+    .skills-stat-body {
+        margin-bottom: 25px;
+    }
+    
+    /* Improve spacing on mobile */
+    .space {
+        height: 30px;
+    }
+    
+    .serv-head {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .record-card h1 {
+        font-size: 28px;
+    }
+}
+
 
